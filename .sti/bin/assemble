@@ -73,7 +73,6 @@ copy_artifacts "deployments"
   # Picks up WAR_FILE_URL from buildConfig
   echo ${WAR_FILE_URL}
   #curl -o ${DEPLOY_DIR}/ROOT.war -O ${WAR_FILE_URL}
-  cp -v $LOCAL_SOURCE_DIR/test.txt /opt/
   cp -v $LOCAL_SOURCE_DIR/*.war ${DEPLOY_DIR}/
   
 if [ -d $LOCAL_SOURCE_DIR/configuration ]; then
